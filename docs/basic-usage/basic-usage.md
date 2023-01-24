@@ -15,13 +15,13 @@ This class is extending ```StartUp``` class, which is responsible for loading ou
 
 In ```Main``` class you see these methods that are overriding ```StartUp``` class methods:
 
-- [init] {#init}
-- [components] {#components}
-- [onAdmin] {#onAdmin}
-- [api] {#api}
-- [activation] {#activation}
-- [deactivation] {#deactivation}
-- [uninstallation] {#uninstallation}
+- [init](#init)
+- [components](#components)
+- [onAdmin](#onAdmin)
+- [api](#api)
+- [activation](#activation)
+- [deactivation](#deactivation)
+- [uninstallation](#uninstallation)
 
 ---
 ## init method {#init}
