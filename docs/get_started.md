@@ -74,8 +74,18 @@ If this constant is already defined don't change it.
 
 ---  
 ## Change version option name
+>We will create a CLI command to do this automatically in next versions
 In ```Main.php``` is two function called ```activation``` and ```onUpdate``` that are setting an option  
 called ```realtyna_must_rename_version```. You should change ```must_rename```.
+
+---
+## Config 
+change following configs:
+```
+namespace
+plugin.name
+```
+**```plugin.name``` should be under_scored, do not use dash (-) for it.**
 
 ---  
 ## Activate your plugin
