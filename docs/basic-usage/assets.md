@@ -85,7 +85,12 @@ public function addScript(
     }
 ```
 
+You should use this method like so:
+```php
+$this->addScript();
+```
+
 ### addScript Parameters
 There is only 1 difference from addStyle method:
-```#in_footer``` parameter which decides to enqueue this script in footer
+```$in_footer``` parameter which decides to enqueue this script in footer
 or not.
