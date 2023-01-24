@@ -33,7 +33,7 @@ In your component class you have to define ```register()``` method.
 
 ## Usage concept
 Components are used to create cleaner and more structured plugins. So you should try to
-contain of all of your logic in its own component with no 
+contain all of your logic in its own component with no 
 dependency to other components. of course sometimes these dependencies are
 unavoidable.
 
@@ -76,6 +76,7 @@ finally we have a component that add a menu to WordPress admin dashboard.
 
 
 Another example:
+
 I want to add Phone number field to users, so I create ```PhoneNumber``` class in:
 ```
 ./app/Components/CustomFields/User/PhoneNumber.php
@@ -98,4 +99,9 @@ class PhoneNumber extends Component
         return $contactmethods;
     }
 }
+```
+
+and I register it like so in my ```Main``` class:
+```php
+$this->addComponent(PhoneNumber::class);
 ```
