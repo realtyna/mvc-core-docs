@@ -103,11 +103,9 @@ public function login()
 ---
 ## Validator
 
-When you extend ```Realtyna\MvcCore\API``` you have access to validator like so:
-```$this->validator```.
+When you extend ```Realtyna\MvcCore\API``` you have access to validator.
 
 For validating incoming request you should define your rules first.
-
 For example, I want to validate ```login``` request. so my rules array will be:
 ```php
 $rules = [
