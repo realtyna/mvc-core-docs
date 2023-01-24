@@ -1,5 +1,6 @@
 ---
 layout: default
-title: API
+title: Database
+parent: Basic Usage
 nav_order: 6
 ---

@@ -39,12 +39,12 @@ for example enqueueing an asset or adding an action.
 
 ---
 ## api method {#api}
-We use this method to register our api endpoints. read [API](/mvc-core-docs/docs/api.html).
+We use this method to register our api endpoints. read [API](/mvc-core-docs/docs/basic-usage/api.html).
 
 ---
 ## activation method {#activation}
 As you already guessed this is our activation method. By default, it will run migrations and seeds.
-For more detail about migrations and seeders read [Database](/mvc-core-docs/docs/database.html).
+For more detail about migrations and seeders read [Database](/mvc-core-docs/docs/basic-usage/database.html).
 
 You can add your custom activation codes between START & END comment section
 
@@ -54,4 +54,4 @@ No explanation needed, You already know.
 
 ---
 ## uninstallation {#uninstallation}
-By default, it will roll back all changes made to database using phinx read [Database](/mvc-core-docs/docs/database.html).
+By default, it will roll back all changes made to database using phinx read [Database](/mvc-core-docs/docs/basic-usage/database.html).
