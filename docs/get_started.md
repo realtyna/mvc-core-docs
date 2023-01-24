@@ -40,8 +40,10 @@ Open ```composer.json``` and change ```MustRename``` namespace under ```psr-4```
 
 Choose you namespace carefully to avoid conflicts.
 
-For example if your plugin name is realtyna-crm-2 your namespace should something like:
+For example if your plugin name is realtyna-crm-2 your namespace should something like: 
+
 ```CRM2```
+
 Now you have change namespaces and constants and config file.
 
 Then open ```plugin.php``` and use correct namespace for ```Main``` class.
@@ -52,7 +54,6 @@ At last run the following command in you terminal:
 ```bash
 composer dump-autoload
 ```
-
 ---
 ## Base path constant
 >We will create a CLI command to do this automatically in next versions
@@ -63,7 +64,6 @@ Change ```MUST_RENAME``` in ```REALTYNA_MUST_RENAME_BASE_PATH```.
 
 For example change it to ```REALTYNA_MVC2_BASE_PATH```.
  then go to ```./app/Config/config.php``` and use new constant instead of the old one.
-
 ---
 ## define REALTYNA_JWT_SECRET
 >We will create a CLI command to do this automatically in next versions
