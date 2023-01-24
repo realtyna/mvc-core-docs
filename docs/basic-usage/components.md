@@ -77,7 +77,9 @@ finally we have a component that add a menu to WordPress admin dashboard.
 
 Another example:
 I want to add Phone number field to users, so I create ```PhoneNumber``` class in:
-``` ./app/Components/CustomFields/User/PhoneNumber.php```
+```
+./app/Components/CustomFields/User/PhoneNumber.php
+```
 
 and my class will be:
 
