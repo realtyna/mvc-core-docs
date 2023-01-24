@@ -104,6 +104,7 @@ public function login()
 ## Validator
 When you extend ```Realtyna\MvcCore\API``` you have access to validator
 like so:
+
 ```$this->validator```
 
 For validating incoming request you should define your rules first.
@@ -184,4 +185,9 @@ To do so you can use ```sendResponse``` method that accepts
 - success (boolean)
 - data (array)
 - statusCode (int)
+
+Example:
+```php
+$this->sendResponse(true, ['token'=> 'asdasdasd'], 200);
+```
 
