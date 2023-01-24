@@ -29,7 +29,7 @@ Codes that are written in ```init``` method, will be executed every where.
 
 ---
 ## components method {#components}
-We use this method to register our components. read [Components](/mvc-core-docs/docs/basic-usage/components.html).
+We use this method to register our components. read [Components](/mvc-core-docs/docs/components.html).
 
 ---
 ## onAdmin method {#onAdmin}
@@ -39,7 +39,7 @@ for example enqueueing an asset or adding an action.
 
 ---
 ## api method {#api}
-We use this method to register our api endpoints. read [API](/mvc-core-docs/docs/basic-usage/api.html).
+We use this method to register our api endpoints. read [API](/mvc-core-docs/docs/api.html).
 
 ---
 ## activation method {#activation}
