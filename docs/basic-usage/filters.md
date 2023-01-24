@@ -19,5 +19,10 @@ public function addFilter(string $hook, array $callback, int $priority = 10, int
     }
 ```
 
+You should use this method like so:
+```php
+$this->addFilter();
+```
+
 ## addFilter parameters
 There is no difference between addFilter and addAction parameters so read [Actions](/mvc-core-docs/docs/basic-usage/actions.html)

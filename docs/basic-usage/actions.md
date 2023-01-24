@@ -20,6 +20,11 @@ public function addAction(string $hook, array $callback, int $priority = 10, int
     }
 ```
 
+You should use this method like so:
+```php
+$this->addAction();
+```
+
 ## addAction parameters
 ```$hook``` & ```$priority``` &  ```$accepted_args``` does not need
 any explanation.
@@ -27,12 +32,12 @@ any explanation.
 But for callbacks you need to create a controller first.
 
 You can create your controllers in ```./app/Controllers```.
-controller is a class that you write your login in it.
+controller is a class that you write your logic in it.
 
 after creating you class in given folder you should add it under this namespace:
 ```namespace Realtyna\YOUR-PLUGIN-NAMESPACE\Controllers;```
 
-after creating your controller class for example ```UserController```, create a public method for example: ```index```
+After creating your controller class for example ```UserController```, create a public method in it, for example: ```index```
 
 now you can register your action like so:
 ```php
