@@ -158,6 +158,9 @@ if(!$validation['valid']){
 }
 ```
 
+Validation errors are stored in ```assets/langs/validation.php```. Try not to change them.
+
+
 ## Public routes
 By default, all routes are guarded that means you should pass
 Authorization header in your request.
