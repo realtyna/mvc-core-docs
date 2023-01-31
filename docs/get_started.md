@@ -31,7 +31,13 @@ Run composer update:
 ```bash  
 composer update
 ```
----  
+---
+
+
+## Plugin name
+Change plugin data in ```plugin.php``` (comment section at start of this file).
+
+
 ## Namespace
 >We will create a CLI command to do this automatically in next versions
 
@@ -82,12 +88,16 @@ called ```realtyna_must_rename_version```. You should change ```must_rename```.
 ---
 ## Config 
 change following configs:
-```
-namespace
-plugin.name
-```
-**```plugin.name``` should be under_scored, do not use dash (-) for it.**
 
+**```plugin.name``` should be under_scored, do not use dash (-) for it.**
+```php
+[
+    'namespace' => 'MustRename',
+    'plugin' => [
+        'name' => 'must_rename'
+    ]
+]
+```
 ---  
 ## Activate your plugin
 You are all set, activate your plugin and enjoy your MVC based plugin.
