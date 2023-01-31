@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Views
+title: Settings
 parent: Basic Usage
 nav_order: 9
 ---
