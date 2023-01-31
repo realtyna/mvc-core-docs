@@ -47,3 +47,6 @@ Take a look at ```phpunit.xml.dist```, you can see on line 12
 that PHPUnit will look for files that ends with ```Test.php``` in ```tests``` folder.
 
 You can change that if you want.
+
+## Unit testing tips
+Check out this repo [Unit testing tips](https://github.com/sarven/unit-testing-tips)
