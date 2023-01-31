@@ -48,3 +48,43 @@ Keep it in mind you should check if data already exists then insert it.
 
 Read more on Phinx documentations.
 
+## DB Facades
+You can use ```DB``` class to run query much easier.
+
+Read more about this on [Database](https://laravel.com/docs/9.x/queries).
+
+**Keep it mind that db prefix from WordPress configs are automatically added to table names**
+
+First import ```DB``` as so:
+
+```php
+use \Illuminate\Database\Capsule\Manager as DB;
+```
+
+then you can query Database:
+```php
+DB::table('options')->where('id', 2)->get();
+
+DB::table('users')->select(
+        [
+            'usermeta.meta_key',
+            'usermeta.meta_value',
+            'users.ID',
+            'users.user_email'
+        ]
+    )->join(
+        'usermeta',
+        'users.ID',
+        '=',
+        'usermeta.user_id'
+    )->get();
+
+
+DB::table('posts')->first();
+```
+
+You can even run raw SQL Queries:
+```php
+DB::select(DB::raw("SELECT * FROM wp_posts"))
+```
+
