@@ -58,7 +58,7 @@ Read more about this on [Database](https://laravel.com/docs/9.x/queries).
 First import ```DB``` as so:
 
 ```php
-use \Illuminate\Database\Capsule\Manager as DB;
+use Realtyna\MvcCore\Facades\DB;
 ```
 
 then you can query Database:
