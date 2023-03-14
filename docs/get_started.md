@@ -31,47 +31,25 @@ Run composer update:
 ```bash  
 composer update
 ```
----
 
 
-## Plugin name
-Change plugin data in ```plugin.php``` (comment section at start of this file).
+then you should set up plugin name and namespace. for that you can 
+simply run the following command in your terminal:
 
+```bash
+php realtyna.php setup:plugin
+```
 
-## Namespace
->We will create a CLI command to do this automatically in next versions
-
-Open ```composer.json``` and change ```MustRename``` namespace under ```psr-4``` section.
-
-Choose you namespace carefully to avoid conflicts.
-
-For example if your plugin name is realtyna-crm-2 your namespace should something like: ```CRM2```
-
-Now you have change namespaces and constants and config file.
-
-Then open ```plugin.php``` and use correct namespace for ```Main``` class.
-
-You should change ```Main``` class namespace too so go to ```app/Main.php``` and change the namespace.
-
-At last run the following command in you terminal:
-```bash  
-composer dump-autoload
-```  
----  
-## Base path constant
->We will create a CLI command to do this automatically in next versions
-
-There is constant defined in ```plugin.php``` that represent plugin base path.
-
-Change ```MUST_RENAME``` in ```REALTYNA_MUST_RENAME_BASE_PATH```.
-
-For example change it to ```REALTYNA_MVC2_BASE_PATH```.  
-then go to ```./app/Config/config.php``` and use new constant instead of the old one.
- 
+This command will ask you 3 questions:
+- What is your plugin name(For Example: Realtyna Home Valuation)
+  - This will be used for plugin name in the comment section
+  - Make sure you enter the full name that will be shown in the WordPress dashboard and include **Realtyna** in your name
+- What is your plugin namespace(Insert CamelCase, for example: HomeValuation)
+  - **Realtyna** is already included in the namespace so just enter your product namespace
+- What is your plugin API namespace(for example: home-valuation)
+  - namespaces are already prefixed with **realtyna/** so just enter your application api namespace without any version
 ---  
 ## define REALTYNA_JWT_SECRET
->We will create a CLI command to do this automatically in next versions
-
 you should define ```REALTYNA_JWT_SECRET``` in ```wp-config.php```:
 ```php  
 define('REALTYNA_JWT_SECRET', 'YOUR SECRET');  
