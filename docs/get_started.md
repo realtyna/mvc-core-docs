@@ -48,6 +48,8 @@ This command will ask you 3 questions:
   - **Realtyna** is already included in the namespace so just enter your product namespace
 - What is your plugin API namespace(for example: home-valuation)
   - namespaces are already prefixed with **realtyna/** so just enter your application api namespace without any version
+
+
 ---  
 ## define REALTYNA_JWT_SECRET
 you should define ```REALTYNA_JWT_SECRET``` in ```wp-config.php```:
